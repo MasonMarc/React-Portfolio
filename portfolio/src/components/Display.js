@@ -1,20 +1,24 @@
 import React from 'react';
-import Card from './Card';
 import Nav from './Nav';
 import Projects from './Projects';
 import Contact from './Contact';
+import Footer from './Footer';
 
-const canine = {
-  name: 'Spot',
-  description: 'The best boy',
-  id: 1,
-};
 
-const projects = {
+const projects = [
+  {
   title: 'Project 1',
   description: 'amazing project',
-  id: 1,
-};
+  },
+  {
+    title: 'Project 2',
+    description: 'this is great',
+  },
+  {
+    title: 'Project 3',
+    description: 'fantastic work',
+  },
+];
 
 export default function Display() {
   return (
@@ -27,13 +31,19 @@ export default function Display() {
 
 <div class="container px-4 py-5" id="custom-cards">
 <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-  <Projects title={projects.title} description={projects.description}/>
+  <Projects title={projects[0].title} description={projects[0].description}/>
+  <Projects title={projects[1].title} description={projects[1].description}/>
+  <Projects title={projects[2].title} description={projects[2].description}/>
   </div>
   </div>
 
 
 <div>
   <Contact/>
+</div>
+
+<div>
+  <Footer/>
 </div>
 
 </div>
