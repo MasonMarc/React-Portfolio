@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Nav() {
+export default function Nav({ currentPage, handlePageChange }) {
 
   return (
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -14,13 +14,24 @@ export default function Nav() {
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                        href="#about">About</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                        href="#project">Projects</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                        href="#contact">Contact</a></li>
-                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="#about"
+                        onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          >About</a></li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="#projects"
+                        onClick={() => handlePageChange('Projects')}
+          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</a></li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                        href="#contact"
+                        onClick={() => handlePageChange('Contact')}
+          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a></li>
+                <li class="nav-item mx-0 mx-lg-1">
+                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
                         href="#resume">Resume</a></li>
             </ul>
         </div>
