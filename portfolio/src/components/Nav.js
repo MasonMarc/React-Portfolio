@@ -3,35 +3,35 @@ import React from 'react';
 export default function Nav({ currentPage, handlePageChange }) {
 
   return (
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase static-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="#page-top">Mason Marcantel</a>
-        <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+    <nav className="navbar navbar-expand-lg bg-secondary text-uppercase static-top" id="mainNav">
+    <div className="container">
+        <a className="navbar-brand" href="#page-top">Mason Marcantel</a>
+        <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
             Menu
-            <i class="fas fa-bars"></i>
+            <i className="fas fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item mx-0 mx-lg-1">
-                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+        <div className="collapse navbar-collapse" id="navbarResponsive">
+            <ul className="navbar-nav ms-auto">
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a className={"nav-link py-3 px-0 px-lg-3 rounded"} 
                         href="#about"
                         onClick={() => handlePageChange('About')}
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >About</a></li>
-                <li class="nav-item mx-0 mx-lg-1">
-                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a className="nav-link py-3 px-0 px-lg-3 rounded"
                         href="#projects"
                         onClick={() => handlePageChange('Projects')}
           className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</a></li>
-                <li class="nav-item mx-0 mx-lg-1">
-                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a className="nav-link py-3 px-0 px-lg-3 rounded"
                         href="#contact"
                         onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a></li>
-                <li class="nav-item mx-0 mx-lg-1">
-                  <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                <li className="nav-item mx-0 mx-lg-1">
+                  <a className="nav-link py-3 px-0 px-lg-3 rounded"
                         href="#resume"
                         onClick={() => handlePageChange('Resume')}
           className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a></li>

@@ -64,8 +64,8 @@ export default function Display() {
       return <Resume />;
     }
     if (currentPage === 'Projects') {
-      return <div class="container px-4 py-5" id="custom-cards">
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      return <div className="container px-4 py-5" id="custom-cards">
+        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <Projects title={projects[0].title}
             description={projects[0].description}
             url={projects[0].url}
