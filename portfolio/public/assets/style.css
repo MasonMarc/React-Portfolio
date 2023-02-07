@@ -1,3 +1,7 @@
 #projectDiv:hover{
     background-color: gray;
 }
+
+nav{
+    margin-bottom: 0.5rem;
+}
