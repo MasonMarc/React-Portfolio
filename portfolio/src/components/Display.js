@@ -3,8 +3,8 @@ import Nav from './Nav';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import Resume from './Resume';
 import Footer from './Footer';
-
 
 const projects = [
   {
@@ -38,6 +38,9 @@ export default function Display() {
     }
     if (currentPage === 'Contact') {
       return <Contact />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
     }
     if (currentPage === 'Projects') {
       return <div class="container px-4 py-5" id="custom-cards">

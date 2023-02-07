@@ -32,7 +32,9 @@ export default function Nav({ currentPage, handlePageChange }) {
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a></li>
                 <li class="nav-item mx-0 mx-lg-1">
                   <a class="nav-link py-3 px-0 px-lg-3 rounded"
-                        href="#resume">Resume</a></li>
+                        href="#resume"
+                        onClick={() => handlePageChange('Resume')}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a></li>
             </ul>
         </div>
     </div>
