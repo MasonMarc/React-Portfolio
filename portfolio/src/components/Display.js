@@ -8,6 +8,13 @@ import Footer from './Footer';
 
 const projects = [
   {
+    title: 'Mantis Bug Tracker',
+    description: 'Bug tracking app made using MERN stack',
+    url: 'https://github.com/MasonMarc/Bug-Tracker',
+    photoUrl: '"assets/BugTrackerSH.png"',
+
+  },
+  {
     title: 'Express Urgent Care',
     description: 'Urgent care website with calendar',
     url: 'https://github.com/MasonMarc/Urgent-Care-Appointment-Scheduler',
@@ -18,13 +25,6 @@ const projects = [
     description: 'Review generator using node and lasf.fm api',
     url: 'https://github.com/MasonMarc/Album-Review-Gen',
     photoUrl: '"assets/AlbumReviewSH.png"',
-
-  },
-  {
-    title: 'Note Taker',
-    description: 'Note taking app made using node.js and express',
-    url: 'https://github.com/MasonMarc/Note-Taker',
-    photoUrl: '"assets/notetakeSH.png"',
 
   },
   {
