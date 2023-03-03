@@ -1,3 +1,7 @@
 #projectDiv:hover{
     background-color: gray;
 }
+
+.projdesc{
+    color: red;
+}
