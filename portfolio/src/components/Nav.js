@@ -5,7 +5,7 @@ export default function Nav({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg bg-secondary text-uppercase static-top" id="mainNav">
     <div className="container">
-        <a className="navbar-brand" href="#page-top">Mason Marcantel</a>
+        <a className="navbar-brand" href="#about">Mason Marcantel</a>
         <button className="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
             data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
             aria-expanded="false" aria-label="Toggle navigation">
